@@ -1,48 +1,32 @@
 from abc import ABC, abstractmethod
 from math import cos, sin
 
-
-# =====================================
-# Classe abstraite
-# =====================================
-
 class Moteur(ABC):
-
     @abstractmethod
-    def commander(self, **kwargs):
+    def commander(self, *args, **kwargs):
         pass
 
     @abstractmethod
     def mettre_a_jour(self, robot, dt):
         pass
 
-
-# =====================================
-# Moteur Différentiel
-# =====================================
-
 class MoteurDifferentiel(Moteur):
-
     def __init__(self, v=0.0, omega=0.0):
-        self.v = v
-        self.omega = omega
+        self.v = v  # vitesse linéaire
+        self.omega = omega  # vitesse angulaire
 
     def commander(self, v, omega):
         self.v = v
         self.omega = omega
 
     def mettre_a_jour(self, robot, dt):
-        robot.orientation += self.omega * dt
-        robot.x += self.v * cos(robot.orientation) * dt
-        robot.y += self.v * sin(robot.orientation) * dt
-
-
-# =====================================
-# Moteur Omnidirectionnel
-# =====================================
+        # Mise à jour de l'orientation
+        robot.orientation = (robot.orientation + self.omega * dt) % (2 * 3.14159)
+        # Mise à jour de la position
+        robot.x = robot.x + self.v * cos(robot.orientation) * dt
+        robot.y = robot.y + self.v * sin(robot.orientation) * dt
 
 class MoteurOmnidirectionnel(Moteur):
-
     def __init__(self, vx=0.0, vy=0.0, omega=0.0):
         self.vx = vx
         self.vy = vy
@@ -54,10 +38,8 @@ class MoteurOmnidirectionnel(Moteur):
         self.omega = omega
 
     def mettre_a_jour(self, robot, dt):
-        robot.orientation += self.omega * dt
-
-        robot.x += (self.vx * cos(robot.orientation)
-                    - self.vy * sin(robot.orientation)) * dt
-
-        robot.y += (self.vx * sin(robot.orientation)
-                    + self.vy * cos(robot.orientation)) * dt
+        # Mise à jour de l'orientation
+        robot.orientation = (robot.orientation + self.omega * dt) % (2 * 3.14159)
+        # Mise à jour de la position avec cinématique omnidirectionnelle
+        robot.x = robot.x + (self.vx * cos(robot.orientation) - self.vy * sin(robot.orientation)) * dt
+        robot.y = robot.y + (self.vx * sin(robot.orientation) + self.vy * cos(robot.orientation)) * dt
