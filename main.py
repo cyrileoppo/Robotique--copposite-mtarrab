@@ -1,4 +1,3 @@
-import math
 from robot.robot_mobile import RobotMobile
 from robot.moteur import MoteurDifferentiel, MoteurOmnidirectionnel
 

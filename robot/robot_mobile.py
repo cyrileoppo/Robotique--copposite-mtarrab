@@ -3,6 +3,7 @@ from robot.moteur import Moteur
 
 
 class RobotMobile:
+    _nb_robots = 0
 
     def __init__(self, x=0.0, y=0.0, orientation=0.0, moteur: Moteur = None):
         self.__x = x
@@ -26,6 +27,8 @@ class RobotMobile:
     def y(self):
         return self.__y
 
+    @property
+    def y(self): return self.__y
     @y.setter
     def y(self, value):
         self.__y = float(value)
