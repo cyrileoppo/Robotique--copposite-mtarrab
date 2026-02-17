@@ -25,6 +25,10 @@ class RobotMobile:
     def x(self, value): self.__x = float(value)
 
     @property
+    def y(self):
+        return self.__y
+
+    @property
     def y(self): return self.__y
     @y.setter
     def y(self, value): self.__y = float(value)
@@ -44,7 +48,3 @@ class RobotMobile:
 
     def afficher(self):
         print(f"(x={self.__x:.2f}, y={self.__y:.2f}, orientation={self.__orientation:.2f})")
-
-    def __str__(self):
-        """Surcharge de la méthode de conversion en chaîne de caractères"""
-        return f"(x={self.x:.2f}, y={self.y:.2f}, orientation={self.orientation:.2f})"
