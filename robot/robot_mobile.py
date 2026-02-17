@@ -44,3 +44,7 @@ class RobotMobile:
 
     def afficher(self):
         print(f"(x={self.__x:.2f}, y={self.__y:.2f}, orientation={self.__orientation:.2f})")
+
+    def __str__(self):
+        """Surcharge de la méthode de conversion en chaîne de caractères"""
+        return f"(x={self.x:.2f}, y={self.y:.2f}, orientation={self.orientation:.2f})"
