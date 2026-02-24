@@ -10,7 +10,7 @@ class VuePygame:
 
     def convertir_coordonnees(self, x, y):
         return int(self.largeur / 2 + (x * self.scale)), int(self.hauteur / 2 - (y * self.scale))
-
+    
     def dessiner(self, robot, obstacles=[]): # obstacles par anticipation
         self.screen.fill((240, 240, 240))
         rx, ry = self.convertir_coordonnees(robot.x, robot.y)
@@ -20,6 +20,11 @@ class VuePygame:
         # Orientation
         fx = rx + int(r_px * math.cos(robot.orientation))
         fy = ry - int(r_px * math.sin(robot.orientation))
+        
+        for obs in obstacles:
+            ox, oy = self.convertir_coordonnees(obs.x, obs.y)
+            pygame.draw.circle(self.screen, (200, 0, 0), (ox, oy), int(obs.rayon * self.scale))
+            
         pygame.draw.line(self.screen, (0, 0, 0), (rx, ry), (fx, fy), 3)
         pygame.display.flip()
 
