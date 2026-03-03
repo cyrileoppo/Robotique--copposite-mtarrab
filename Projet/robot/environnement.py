@@ -9,22 +9,22 @@ class Environnement:
         self.base_y = base_y
 
     def ajouter_robot(self, robot):
-        """Méthode pour ajouter un robot[cite: 193]."""
+        """Méthode pour ajouter un robot."""
         self.robots_standards.append(robot)
 
     def ajouter_obstacle(self, obstacle):
-        """Méthode pour ajouter des obstacles[cite: 194]."""
+        """Méthode pour ajouter des obstacles."""
         self.obstacles.append(obstacle)
 
     def tester_collisions(self, robot):
-        """L'environnement délègue ce calcul à chaque obstacle individuellement[cite: 207]."""
+        """L'environnement délègue ce calcul à chaque obstacle individuellement."""
         for obs in self.obstacles:
             if obs.collision(robot.x, robot.y, robot.rayon):
                 return True
         return False
 
     def mettre_a_jour(self, dt):
-        """Met à jour la simulation et teste les collisions [cite: 195-196]."""
+        """Met à jour la simulation et teste les collisions."""
         self.ambulance.sauvegarder_etat()
         self.ambulance.mettre_a_jour(dt)
         
