@@ -1,25 +1,21 @@
 import math
 
 class RobotMobile:
-    """Classe de base représentant un robot mobile[cite: 331]."""
-    _nb_robots = 0 # Attribut statique pour compter les instances [cite: 533]
+    """Classe de base représentant un robot mobile."""
+    _nb_robots = 0 
 
     def __init__(self, x=0.0, y=0.0, orientation=0.0, moteur=None, rayon=15.0):
-        # Attributs protégés [cite: 383]
         self._x = x
         self._y = y
         self.orientation = orientation
-        self.moteur = moteur # Délégation de la cinématique [cite: 419, 488]
+        self.moteur = moteur 
         self.rayon = rayon
-        
-        # Sauvegarde de l'état pour les collisions
         self.x_prec = x
         self.y_prec = y
         self.orientation_prec = orientation
         
         RobotMobile._nb_robots += 1 [cite: 535]
 
-    # Getter et Setter pour x [cite: 388-393]
     @property
     def x(self) -> float:
         return self._x
@@ -28,7 +24,6 @@ class RobotMobile:
     def x(self, value: float):
         self._x = value
 
-    # Getter et Setter pour y
     @property
     def y(self) -> float:
         return self._y
@@ -50,17 +45,17 @@ class RobotMobile:
         self.orientation = self.orientation_prec
 
     def commander(self, **kwargs):
-        """Transmet les commandes au moteur [cite: 499-501]."""
+        """Transmet les commandes au moteur."""
         if self.moteur is not None:
             self.moteur.commander(**kwargs)
 
     def mettre_a_jour(self, dt):
-        """Met à jour le robot via son moteur [cite: 502-504]."""
+        """Met à jour le robot via son moteur."""
         if self.moteur is not None:
             self.moteur.mettre_a_jour(self, dt)
 
     def __str__(self):
-        """Affiche l'état du robot [cite: 561-562]."""
+        """Affiche l'état du robot."""
         return f"Robot({self.x:.2f}, {self.y:.2f}, theta={self.orientation:.2f})"
 
 
@@ -71,7 +66,7 @@ class RobotStandard(RobotMobile):
         self.poids = poids
         self.en_panne = False
         self.temps_sans_signal = 0.0
-        self.limite_signal = 300.0 # Temps avant de déclarer la panne
+        self.limite_signal = 300.0
 
     def emettre_signal(self):
         """Réinitialise le compteur de temps (le robot va bien)."""
@@ -84,7 +79,7 @@ class RobotStandard(RobotMobile):
             self.temps_sans_signal += dt
             if self.temps_sans_signal >= self.limite_signal:
                 self.en_panne = True
-                self.commander(v=0.0, omega=0.0) # S'immobilise en cas de panne
+                self.commander(v=0.0, omega=0.0)
 
 
 class RobotAmbulance(RobotMobile):
@@ -92,5 +87,5 @@ class RobotAmbulance(RobotMobile):
     def __init__(self, x, y, capacite_max=50.0, moteur=None):
         super().__init__(x=x, y=y, orientation=0.0, moteur=moteur, rayon=20.0)
         self.capacite_max = capacite_max
-        self.file_attente = [] # Robots à aller chercher
+        self.file_attente = []
         self.charge_actuelle = 0.0
