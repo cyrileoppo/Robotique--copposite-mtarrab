@@ -19,7 +19,13 @@ class VuePygame:
     def dessiner(self, environnement):
         """Dessine tout l'environnement [cite: 467-468]."""
         self.ecran.fill(self.COULEUR_FOND)
-
+        
+        COULEUR_OBS = (80, 80, 80)
+        for obs in environnement.obstacles:
+            pygame.draw.circle(self.ecran, COULEUR_OBS, (int(obs.x), int(obs.y)), obs.rayon)
+        
+        COULEUR_RAYON = (0, 255, 0)
+        
         for robot in environnement.robots:
             # 1. Choix de la couleur selon le type et l'état
             if robot.en_panne:
@@ -38,6 +44,12 @@ class VuePygame:
             fin_x = x_px + int(math.cos(robot.theta) * rayon * 1.5)
             fin_y = y_px + int(math.sin(robot.theta) * rayon * 1.5)
             pygame.draw.line(self.ecran, self.COULEUR_DIRECTION, (x_px, y_px), (fin_x, fin_y), 3)
+            
+            if hasattr(robot, 'capteur') and hasattr(robot.capteur, 'dernieres_mesures'):
+                    for angle_absolu, dist in robot.capteur.dernieres_mesures:
+                        fin_x = int(robot.x + math.cos(angle_absolu) * dist)
+                        fin_y = int(robot.y + math.sin(angle_absolu) * dist)
+                        pygame.draw.line(self.ecran, COULEUR_RAYON, (int(robot.x), int(robot.y)), (fin_x, fin_y), 1) 
 
         pygame.display.flip()
 

@@ -17,3 +17,9 @@
 [2026-03-05 14:37:41] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 100)
 [2026-03-05 14:37:44] INFO Simulation Démarrage de la boucle graphique.
 [2026-03-05 14:38:10] INFO Simulation Fin de la simulation.
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (400, 300)
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 100)
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 100)
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 100)
+[2026-03-05 14:49:36] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 14:51:35] INFO Simulation Fin de la simulation.

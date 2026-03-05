@@ -5,6 +5,7 @@ from .logging_config import setup_logger
 from .modele.environnement import Environnement
 from .modele.robot import RobotStandard, RobotAmbulance
 from .vue.vue_pygame import VuePygame
+from .modele.obstacles import ObstacleCercle
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Simulation de la Clinique des Robots")
@@ -23,6 +24,8 @@ def main():
     env = Environnement(largeur, hauteur)
     ambulance = RobotAmbulance("Ambu-1", x=400, y=300)
     env.ajouter_robot(ambulance)
+    env.ajouter_obstacle(ObstacleCercle(x=400, y=150, rayon=50))
+    env.ajouter_obstacle(ObstacleCercle(x=600, y=300, rayon=80))
     
     # Ajouter des robots standards
     for i in range(args.nb_robots):
@@ -50,6 +53,7 @@ def main():
             commandes[f"R-{i+1}"] = (0.5, 0.0) # Les standards avancent tout droit
             
         # b) Mise à jour du Modèle
+        mesures = ambulance.capteur.read(env)
         env.step(commandes, dt)
         
         # c) Mise à jour de la Vue

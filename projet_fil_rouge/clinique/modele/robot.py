@@ -1,5 +1,6 @@
 import math
 from .moteur import MoteurDifferentielRealiste
+from .capteurs import LidarMoustaches
 
 class RobotMobile:
     def __init__(self, id_robot, x, y, poids=0):
@@ -35,3 +36,4 @@ class RobotAmbulance(RobotMobile):
         super().__init__(id_robot, x, y, poids=0)
         self.capacite_max = capacite_max
         self.charge_actuelle = 0
+        self.capteur = LidarMoustaches(self, [-math.pi/6, 0, math.pi/6], portee_max=80)

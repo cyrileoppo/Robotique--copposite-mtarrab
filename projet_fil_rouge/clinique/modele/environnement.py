@@ -5,6 +5,7 @@ class Environnement:
         self.largeur = largeur
         self.hauteur = hauteur
         self.robots = []
+        self.obstacles = []
         self.logger = logging.getLogger(__name__)
 
     def ajouter_robot(self, robot):
@@ -17,3 +18,6 @@ class Environnement:
             # Récupère la commande associée à ce robot (ou (0,0) par défaut)
             v_cmd, omega_cmd = commandes.get(robot.id, (0.0, 0.0))
             robot.appliquer_commande(v_cmd, omega_cmd, dt)
+    
+    def ajouter_obstacle(self, obs): 
+        self.obstacles.append(obs)
