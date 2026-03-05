@@ -122,3 +122,85 @@
 [2026-03-05 15:37:21] INFO Simulation Chargement de R-2
 [2026-03-05 15:37:24] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
 [2026-03-05 15:37:24] INFO Simulation R-2 réparé !
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:40:26] INFO Simulation Chargement de R-1
+[2026-03-05 15:40:58] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:40:58] INFO Simulation R-1 réparé !
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:41:04] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:43:14] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:43:30] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:44:06] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:45:36] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4'] (Total: 25 kg)
+[2026-03-05 15:45:55] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:46:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (700, 220)
+[2026-03-05 15:46:13] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:46:13] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3', 'R-1'] (Total: 45 kg)
+[2026-03-05 15:46:35] INFO Simulation Chargement de R-3 (30 kg). Charge: 30/50
+[2026-03-05 15:46:47] INFO Simulation Chargement de R-1 (15 kg). Charge: 45/50
+[2026-03-05 15:47:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:47:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:47:17] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-05 15:47:17] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4', 'R-2'] (Total: 45 kg)
+[2026-03-05 15:47:22] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:47:47] INFO Simulation Chargement de R-2 (20 kg). Charge: 45/50
+[2026-03-05 15:48:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (700, 220)
+[2026-03-05 15:48:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:48:13] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-05 15:48:13] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-1', 'R-3'] (Total: 45 kg)
+[2026-03-05 15:48:43] INFO Simulation Chargement de R-1 (15 kg). Charge: 15/50
+[2026-03-05 15:48:44] INFO Simulation Chargement de R-3 (30 kg). Charge: 45/50
+[2026-03-05 15:48:48] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:48:48] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:48:48] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-05 15:48:49] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-1'] (Total: 15 kg)
+[2026-03-05 15:48:52] INFO Simulation Chargement de R-1 (15 kg). Charge: 15/50
+[2026-03-05 15:48:55] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:48:55] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:10] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4'] (Total: 25 kg)
+[2026-03-05 15:49:14] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:49:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (700, 220)
+[2026-03-05 15:49:17] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:18] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-2'] (Total: 20 kg)
+[2026-03-05 15:49:20] INFO Simulation Chargement de R-2 (20 kg). Charge: 20/50
+[2026-03-05 15:49:23] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:49:23] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:25] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-2'] (Total: 20 kg)
+[2026-03-05 15:49:29] INFO Simulation Chargement de R-2 (20 kg). Charge: 20/50
+[2026-03-05 15:49:32] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:49:32] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:32] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4'] (Total: 25 kg)
+[2026-03-05 15:49:34] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:49:39] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
