@@ -204,3 +204,9 @@
 [2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
 [2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
 [2026-03-05 15:49:39] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:52:14] INFO Simulation Mission optiisée (TSP) ! Ordre de ramassage : ['R-3']
