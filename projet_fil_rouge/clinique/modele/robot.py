@@ -1,4 +1,5 @@
 import math
+import random
 from .moteur import MoteurDifferentielRealiste
 from .capteurs import LidarMoustaches
 
@@ -29,7 +30,11 @@ class RobotMobile:
 class RobotStandard(RobotMobile):
     def __init__(self, id_robot, x, y, poids):
         super().__init__(id_robot, x, y, poids)
-        # On pourrait ajouter un timer "silence radio" ici plus tard
+        self.probabilite_panne = 0.005
+    def mettre_a_jour_etat(self):
+        """Simule l'usure du robot."""
+        if not self.en_panne and random.random() < self.probabilite_panne:
+            self.en_panne = True
 
 class RobotAmbulance(RobotMobile):
     def __init__(self, id_robot, x, y, capacite_max=50):
