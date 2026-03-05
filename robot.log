@@ -1,0 +1,13 @@
+[2026-03-05 14:29:27] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 100)
+[2026-03-05 14:29:27] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (200, 200)
+[2026-03-05 14:29:27] INFO Simulation Début de la simulation (10 itérations)
+[2026-03-05 14:29:27] DEBUG Simulation Itération 1 | Ambu-1 Pos: (100.00, 100.00) - Vitesse: 0.05
+[2026-03-05 14:29:27] DEBUG Simulation Itération 2 | Ambu-1 Pos: (100.01, 100.00) - Vitesse: 0.10
+[2026-03-05 14:29:27] DEBUG Simulation Itération 3 | Ambu-1 Pos: (100.03, 100.00) - Vitesse: 0.15
+[2026-03-05 14:29:27] DEBUG Simulation Itération 4 | Ambu-1 Pos: (100.05, 100.00) - Vitesse: 0.20
+[2026-03-05 14:29:27] DEBUG Simulation Itération 5 | Ambu-1 Pos: (100.07, 100.00) - Vitesse: 0.24
+[2026-03-05 14:29:27] DEBUG Simulation Itération 6 | Ambu-1 Pos: (100.10, 100.00) - Vitesse: 0.29
+[2026-03-05 14:29:27] DEBUG Simulation Itération 7 | Ambu-1 Pos: (100.14, 100.00) - Vitesse: 0.34
+[2026-03-05 14:29:27] DEBUG Simulation Itération 8 | Ambu-1 Pos: (100.17, 100.00) - Vitesse: 0.38
+[2026-03-05 14:29:27] DEBUG Simulation Itération 9 | Ambu-1 Pos: (100.22, 100.00) - Vitesse: 0.43
+[2026-03-05 14:29:27] DEBUG Simulation Itération 10 | Ambu-1 Pos: (100.26, 100.00) - Vitesse: 0.47
