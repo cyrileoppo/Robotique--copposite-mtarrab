@@ -51,6 +51,9 @@ class VuePygame:
                         fin_y = int(robot.y + math.sin(angle_absolu) * dist)
                         pygame.draw.line(self.ecran, COULEUR_RAYON, (int(robot.x), int(robot.y)), (fin_x, fin_y), 1) 
 
+        # Dessiner la Base de Réparation (un carré vert en haut à droite)
+        COULEUR_BASE = (50, 200, 50)
+        pygame.draw.rect(self.ecran, COULEUR_BASE, (650, 50, 100, 100), border_radius=10)
         pygame.display.flip()
 
     def quitter(self):

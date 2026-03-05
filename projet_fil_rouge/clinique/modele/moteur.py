@@ -1,7 +1,7 @@
 import math
 
 class MoteurDifferentielRealiste:
-    def __init__(self, v_max=20.0, omega_max=21.0, a_max=9.5, frottement=5.1):
+    def __init__(self, v_max=2.0, omega_max=1.0, a_max=0.5, frottement=0.1):
         # Paramètres physiques
         self.v_max = v_max
         self.omega_max = omega_max
