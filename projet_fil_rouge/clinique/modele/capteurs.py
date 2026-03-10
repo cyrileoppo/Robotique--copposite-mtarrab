@@ -1,35 +1,43 @@
 import math
+from .obstacles import ObstacleCercle
 
 class CapteurDistance:
-    """Interface commune pour les capteurs [cite: 374-376]."""
     def read(self, env):
         raise NotImplementedError
 
 class LidarMoustaches(CapteurDistance):
     def __init__(self, robot, angles, portee_max=100):
         self.robot = robot
-        self.angles = angles # Liste d'angles relatifs au robot (ex: [-0.5, 0, 0.5])
+        self.angles = angles
         self.portee_max = portee_max
-        self.dernieres_mesures = [] # Pour l'affichage graphique
+        self.dernieres_mesures = []
 
     def read(self, env):
-        """Lit les distances pour chaque rayon [cite: 163, 177-186]."""
         self.dernieres_mesures = []
         
         for angle_relatif in self.angles:
-            # Calcul de la direction du rayon [cite: 172-173]
             angle_absolu = self.robot.theta + angle_relatif
             dx = math.cos(angle_absolu)
             dy = math.sin(angle_absolu)
             
             dist_min = self.portee_max
             
-            # Test d'intersection avec tous les obstacles [cite: 182-186]
+            # 1. Détection des obstacles fixes
             for obs in env.obstacles:
                 dist = obs.intersection(self.robot.x, self.robot.y, dx, dy, self.portee_max)
                 if dist is not None and dist < dist_min:
                     dist_min = dist
                     
+            # 2. Détection des obstacles dynamiques (les autres robots actifs)
+            for autre_robot in env.robots:
+                # On ignore soi-même et les robots en panne (pour pouvoir les secourir)
+                if autre_robot != self.robot and not getattr(autre_robot, 'en_panne', False):
+                    # On modélise temporairement le robot comme un ObstacleCercle de rayon 25
+                    obs_robot = ObstacleCercle(autre_robot.x, autre_robot.y, 25)
+                    dist = obs_robot.intersection(self.robot.x, self.robot.y, dx, dy, self.portee_max)
+                    if dist is not None and dist < dist_min:
+                        dist_min = dist
+                        
             self.dernieres_mesures.append((angle_absolu, dist_min))
             
         return [mesure[1] for mesure in self.dernieres_mesures]
