@@ -49,7 +49,6 @@ class VuePygame:
         pygame.draw.line(self.screen, (0, 0, 0), (px, py), (x_dir, y_dir), 2)
 
     def dessiner_environnement(self, environnement):
-        self.ajuster_echelle_auto(environnement)
         self.screen.fill((240, 240, 240))
 
         # Base

@@ -20,7 +20,6 @@ class ControleurAutonome:
             if d < distance_min:
                 distance_min = d
                 obstacle_le_plus_proche = obs
-
         rayon_detection = 1.2
 
         if obstacle_le_plus_proche and distance_min < rayon_detection:
