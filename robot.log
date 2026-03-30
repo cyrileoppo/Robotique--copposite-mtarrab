@@ -1,0 +1,296 @@
+[2026-03-05 14:29:27] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 100)
+[2026-03-05 14:29:27] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (200, 200)
+[2026-03-05 14:29:27] INFO Simulation Début de la simulation (10 itérations)
+[2026-03-05 14:29:27] DEBUG Simulation Itération 1 | Ambu-1 Pos: (100.00, 100.00) - Vitesse: 0.05
+[2026-03-05 14:29:27] DEBUG Simulation Itération 2 | Ambu-1 Pos: (100.01, 100.00) - Vitesse: 0.10
+[2026-03-05 14:29:27] DEBUG Simulation Itération 3 | Ambu-1 Pos: (100.03, 100.00) - Vitesse: 0.15
+[2026-03-05 14:29:27] DEBUG Simulation Itération 4 | Ambu-1 Pos: (100.05, 100.00) - Vitesse: 0.20
+[2026-03-05 14:29:27] DEBUG Simulation Itération 5 | Ambu-1 Pos: (100.07, 100.00) - Vitesse: 0.24
+[2026-03-05 14:29:27] DEBUG Simulation Itération 6 | Ambu-1 Pos: (100.10, 100.00) - Vitesse: 0.29
+[2026-03-05 14:29:27] DEBUG Simulation Itération 7 | Ambu-1 Pos: (100.14, 100.00) - Vitesse: 0.34
+[2026-03-05 14:29:27] DEBUG Simulation Itération 8 | Ambu-1 Pos: (100.17, 100.00) - Vitesse: 0.38
+[2026-03-05 14:29:27] DEBUG Simulation Itération 9 | Ambu-1 Pos: (100.22, 100.00) - Vitesse: 0.43
+[2026-03-05 14:29:27] DEBUG Simulation Itération 10 | Ambu-1 Pos: (100.26, 100.00) - Vitesse: 0.47
+[2026-03-05 14:37:41] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (400, 300)
+[2026-03-05 14:37:41] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 100)
+[2026-03-05 14:37:41] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 100)
+[2026-03-05 14:37:41] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 100)
+[2026-03-05 14:37:44] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 14:38:10] INFO Simulation Fin de la simulation.
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (400, 300)
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 100)
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 100)
+[2026-03-05 14:49:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 100)
+[2026-03-05 14:49:36] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 14:51:35] INFO Simulation Fin de la simulation.
+[2026-03-05 14:57:59] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 150)
+[2026-03-05 14:57:59] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 14:57:59] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 14:57:59] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 14:57:59] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 14:58:40] INFO Simulation Fin de la simulation.
+[2026-03-05 15:03:08] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 150)
+[2026-03-05 15:03:08] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:03:08] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:03:08] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:03:09] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 15:03:30] INFO Simulation Fin de la simulation.
+[2026-03-05 15:04:00] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 150)
+[2026-03-05 15:04:00] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:04:00] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:04:00] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:04:01] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 15:04:10] INFO Simulation Fin de la simulation.
+[2026-03-05 15:04:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 150)
+[2026-03-05 15:04:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:04:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:04:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:04:18] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 15:04:23] INFO Simulation Fin de la simulation.
+[2026-03-05 15:04:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 150)
+[2026-03-05 15:04:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:04:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:04:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:04:51] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 15:04:54] INFO Simulation Fin de la simulation.
+[2026-03-05 15:05:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 150)
+[2026-03-05 15:05:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:05:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:05:18] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:05:18] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 15:05:25] INFO Simulation Fin de la simulation.
+[2026-03-05 15:05:45] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (100, 150)
+[2026-03-05 15:05:45] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:05:45] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:05:45] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:05:46] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 15:07:56] INFO Simulation Fin de la simulation.
+[2026-03-05 15:30:02] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:30:02] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:30:02] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:30:02] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:30:03] INFO Simulation Démarrage de la boucle graphique.
+[2026-03-05 15:32:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:32:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:32:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:32:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:33:29] INFO Simulation Chargement de R-1
+[2026-03-05 15:33:58] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:33:58] INFO Simulation R-1 réparé !
+[2026-03-05 15:34:23] INFO Simulation Chargement de R-2
+[2026-03-05 15:34:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:34:52] INFO Simulation R-2 réparé !
+[2026-03-05 15:35:14] INFO Simulation Chargement de R-3
+[2026-03-05 15:35:37] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:35:37] INFO Simulation R-3 réparé !
+[2026-03-05 15:35:42] INFO Simulation Chargement de R-1
+[2026-03-05 15:35:47] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:35:47] INFO Simulation R-1 réparé !
+[2026-03-05 15:36:16] INFO Simulation Chargement de R-2
+[2026-03-05 15:36:21] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:36:21] INFO Simulation R-2 réparé !
+[2026-03-05 15:36:24] INFO Simulation Chargement de R-3
+[2026-03-05 15:36:27] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:36:27] INFO Simulation R-3 réparé !
+[2026-03-05 15:36:31] INFO Simulation Chargement de R-1
+[2026-03-05 15:36:34] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:36:34] INFO Simulation R-1 réparé !
+[2026-03-05 15:36:37] INFO Simulation Chargement de R-3
+[2026-03-05 15:36:40] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:36:40] INFO Simulation R-3 réparé !
+[2026-03-05 15:36:43] INFO Simulation Chargement de R-1
+[2026-03-05 15:36:46] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:36:46] INFO Simulation R-1 réparé !
+[2026-03-05 15:36:47] INFO Simulation Chargement de R-2
+[2026-03-05 15:36:48] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:36:48] INFO Simulation R-2 réparé !
+[2026-03-05 15:36:51] INFO Simulation Chargement de R-3
+[2026-03-05 15:36:55] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:36:55] INFO Simulation R-3 réparé !
+[2026-03-05 15:36:58] INFO Simulation Chargement de R-1
+[2026-03-05 15:37:01] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:37:01] INFO Simulation R-1 réparé !
+[2026-03-05 15:37:04] INFO Simulation Chargement de R-2
+[2026-03-05 15:37:07] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:37:07] INFO Simulation R-2 réparé !
+[2026-03-05 15:37:10] INFO Simulation Chargement de R-3
+[2026-03-05 15:37:12] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:37:12] INFO Simulation R-3 réparé !
+[2026-03-05 15:37:15] INFO Simulation Chargement de R-1
+[2026-03-05 15:37:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:37:17] INFO Simulation R-1 réparé !
+[2026-03-05 15:37:21] INFO Simulation Chargement de R-2
+[2026-03-05 15:37:24] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:37:24] INFO Simulation R-2 réparé !
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:39:52] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:40:26] INFO Simulation Chargement de R-1
+[2026-03-05 15:40:58] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:40:58] INFO Simulation R-1 réparé !
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:41:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:41:04] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:43:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:43:14] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:43:29] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:43:30] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:44:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:44:06] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:45:28] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:45:36] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4'] (Total: 25 kg)
+[2026-03-05 15:45:55] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:46:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (700, 220)
+[2026-03-05 15:46:13] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:46:13] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3', 'R-1'] (Total: 45 kg)
+[2026-03-05 15:46:35] INFO Simulation Chargement de R-3 (30 kg). Charge: 30/50
+[2026-03-05 15:46:47] INFO Simulation Chargement de R-1 (15 kg). Charge: 45/50
+[2026-03-05 15:47:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:47:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:47:17] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-05 15:47:17] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4', 'R-2'] (Total: 45 kg)
+[2026-03-05 15:47:22] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:47:47] INFO Simulation Chargement de R-2 (20 kg). Charge: 45/50
+[2026-03-05 15:48:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (700, 220)
+[2026-03-05 15:48:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:48:13] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-05 15:48:13] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-1', 'R-3'] (Total: 45 kg)
+[2026-03-05 15:48:43] INFO Simulation Chargement de R-1 (15 kg). Charge: 15/50
+[2026-03-05 15:48:44] INFO Simulation Chargement de R-3 (30 kg). Charge: 45/50
+[2026-03-05 15:48:48] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:48:48] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-05 15:48:48] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-05 15:48:49] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-1'] (Total: 15 kg)
+[2026-03-05 15:48:52] INFO Simulation Chargement de R-1 (15 kg). Charge: 15/50
+[2026-03-05 15:48:55] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-05 15:48:55] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:10] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4'] (Total: 25 kg)
+[2026-03-05 15:49:14] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:49:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (700, 220)
+[2026-03-05 15:49:17] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:18] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-2'] (Total: 20 kg)
+[2026-03-05 15:49:20] INFO Simulation Chargement de R-2 (20 kg). Charge: 20/50
+[2026-03-05 15:49:23] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:49:23] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:25] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-2'] (Total: 20 kg)
+[2026-03-05 15:49:29] INFO Simulation Chargement de R-2 (20 kg). Charge: 20/50
+[2026-03-05 15:49:32] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-05 15:49:32] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-05 15:49:32] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-4'] (Total: 25 kg)
+[2026-03-05 15:49:34] INFO Simulation Chargement de R-4 (25 kg). Charge: 25/50
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:49:38] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:49:39] INFO Simulation Nouvelle mission ! Le sac à dos a sélectionné : ['R-3'] (Total: 30 kg)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-05 15:52:10] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-05 15:52:14] INFO Simulation Mission optiisée (TSP) ! Ordre de ramassage : ['R-3']
+[2026-03-10 13:10:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:10:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-10 13:10:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-10 13:10:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-10 13:10:13] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-10 13:10:14] INFO Simulation Mission optiisée (TSP) ! Ordre de ramassage : ['R-2']
+[2026-03-10 13:10:40] INFO Simulation Chargement de R-2. Charge: 20/50
+[2026-03-10 13:12:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:12:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-10 13:12:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-10 13:12:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-10 13:12:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-10 13:13:02] INFO Simulation Mission optimisée (TSP) ! Ordre de ramassage : ['R-3']
+[2026-03-10 13:14:15] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:14:15] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-10 13:14:15] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-10 13:14:15] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-10 13:14:15] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-10 13:14:18] INFO Simulation Mission optimisée (TSP) ! Ordre de ramassage : ['R-1']
+[2026-03-10 13:16:21] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:16:21] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-10 13:16:21] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-10 13:16:21] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-10 13:16:21] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-10 13:18:16] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:18:16] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-10 13:18:16] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-10 13:18:16] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-10 13:18:16] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-10 13:19:28] INFO Simulation Chargement de R-4. Charge: 25/50
+[2026-03-10 13:20:49] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:20:49] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-10 13:20:49] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-10 13:20:49] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-10 13:20:49] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-10 13:22:37] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:22:37] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 500)
+[2026-03-10 13:22:37] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (250, 500)
+[2026-03-10 13:22:37] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (400, 500)
+[2026-03-10 13:22:37] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (550, 500)
+[2026-03-10 13:23:02] INFO Simulation Chargement de R-2. Charge: 20/50
+[2026-03-10 13:23:24] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-10 13:23:24] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-10 13:23:46] INFO Simulation Chargement de R-3. Charge: 30/50
+[2026-03-10 13:23:54] INFO Simulation Chargement de R-1. Charge: 45/50
+[2026-03-10 13:24:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-10 13:24:17] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-10 13:24:17] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-10 13:24:19] INFO Simulation Chargement de R-2. Charge: 20/50
+[2026-03-10 13:28:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:28:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 400)
+[2026-03-10 13:28:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (200, 450)
+[2026-03-10 13:28:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (300, 500)
+[2026-03-10 13:28:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (400, 400)
+[2026-03-10 13:28:50] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-5 ajouté à (500, 450)
+[2026-03-10 13:29:14] INFO Simulation Chargement de R-2. Charge: 20/50
+[2026-03-10 13:29:27] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-10 13:29:27] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-10 13:29:47] INFO Simulation Chargement de R-3. Charge: 30/50
+[2026-03-10 13:30:02] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-10 13:30:02] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-10 13:30:18] INFO Simulation Chargement de R-1. Charge: 15/50
+[2026-03-10 13:30:31] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-10 13:30:31] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-10 13:30:34] INFO Simulation Chargement de R-4. Charge: 25/50
+[2026-03-10 13:30:36] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (700, 220)
+[2026-03-10 13:30:36] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-10 13:30:38] INFO Simulation Chargement de R-3. Charge: 30/50
+[2026-03-10 13:30:55] INFO Simulation Chargement de R-2. Charge: 50/50
+[2026-03-10 13:30:58] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (700, 220)
+[2026-03-10 13:30:58] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (700, 220)
+[2026-03-10 13:30:58] INFO Simulation Base atteinte ! 2 robot(s) réparé(s).
+[2026-03-10 13:31:09] DEBUG projet_fil_rouge.clinique.modele.environnement Robot Ambu-1 ajouté à (700, 100)
+[2026-03-10 13:31:09] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (100, 400)
+[2026-03-10 13:31:09] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-2 ajouté à (200, 450)
+[2026-03-10 13:31:09] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-3 ajouté à (300, 500)
+[2026-03-10 13:31:09] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-4 ajouté à (400, 400)
+[2026-03-10 13:31:09] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-5 ajouté à (500, 450)
+[2026-03-10 13:31:26] INFO Simulation Chargement de R-5. Charge: 10/50
+[2026-03-10 13:31:39] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-5 ajouté à (700, 220)
+[2026-03-10 13:31:39] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
+[2026-03-10 13:31:56] INFO Simulation Chargement de R-1. Charge: 15/50
+[2026-03-10 13:32:03] DEBUG projet_fil_rouge.clinique.modele.environnement Robot R-1 ajouté à (700, 220)
+[2026-03-10 13:32:03] INFO Simulation Base atteinte ! 1 robot(s) réparé(s).
