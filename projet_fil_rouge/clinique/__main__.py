@@ -35,6 +35,42 @@ def parse_args():
     return p.parse_args()
 
 
+def _position_reparation(index):
+    """
+    Retourne une position distincte dans la base pour éviter que les robots
+    réparés ne se superposent.
+    """
+    emplacements = [
+        (BASE_X - 20, BASE_Y - 20),
+        (BASE_X + 20, BASE_Y - 20),
+        (BASE_X - 20, BASE_Y + 20),
+        (BASE_X + 20, BASE_Y + 20),
+        (BASE_X, BASE_Y),
+        (BASE_X - 30, BASE_Y),
+        (BASE_X + 30, BASE_Y),
+        (BASE_X, BASE_Y - 30),
+        (BASE_X, BASE_Y + 30),
+    ]
+    return emplacements[index % len(emplacements)]
+
+
+def _prochaine_direction_sortie():
+    """
+    Alterne les directions de sortie :
+    - 'gauche'
+    - 'bas'
+    - 'gauche'
+    - 'bas'
+    ...
+    """
+    if not hasattr(_prochaine_direction_sortie, "toggle"):
+        _prochaine_direction_sortie.toggle = 0
+
+    direction = "gauche" if _prochaine_direction_sortie.toggle % 2 == 0 else "bas"
+    _prochaine_direction_sortie.toggle += 1
+    return direction
+
+
 def main():
     args = parse_args()
     setup_logger(args.debug)
@@ -66,7 +102,7 @@ def main():
 
     vue = VuePygame(LARGEUR, HAUTEUR)
     strat_ambu = GoalAndAvoidStrategy(distance_securite=AMBULANCE_DISTANCE_SECURITE)
-    strat_std  = AvoidStrategy(distance_securite=STANDARD_DISTANCE_SECURITE)
+    strat_std = AvoidStrategy(distance_securite=STANDARD_DISTANCE_SECURITE)
 
     en_cours = True
     while en_cours:
@@ -118,8 +154,18 @@ def _avancer_reparations(env, logger):
                 r.en_reparation = False
                 r.en_sortie_base = True
                 r.dist_sortie_parcourue = 0.0
-                r.theta = random.uniform(-math.pi, math.pi)  # direction aléatoire
-                logger.info(f"{r.id} réparé, déploiement en cours.")
+
+                # Alterne la porte de sortie
+                r.direction_sortie = _prochaine_direction_sortie()
+
+                if r.direction_sortie == "gauche":
+                    r.theta = math.pi
+                else:  # bas
+                    r.theta = math.pi / 2
+
+                logger.info(
+                    f"{r.id} réparé, déploiement en cours par la sortie {r.direction_sortie}."
+                )
 
 
 def _gerer_ambulance(ambulance, env, strategy, logger):
@@ -129,11 +175,14 @@ def _gerer_ambulance(ambulance, env, strategy, logger):
         cible = ambulance.plan_sauvetage[0]
         if cible in env.robots:
             if math.hypot(ambulance.x - cible.x, ambulance.y - cible.y) <= RAYON_ACTION:
-                ambulance.moteur.v = ambulance.moteur.omega = 0.0
+                ambulance.moteur.v = 0.0
+                ambulance.moteur.omega = 0.0
                 ambulance.robots_charges.append(cible)
                 env.robots.remove(cible)
                 ambulance.plan_sauvetage.pop(0)
-                logger.info(f"Chargé {cible.id} — charge {ambulance.poids_charge}/{ambulance.capacite_max} kg")
+                logger.info(
+                    f"Chargé {cible.id} — charge {ambulance.poids_charge}/{ambulance.capacite_max} kg"
+                )
             else:
                 strategy.set_cible(cible.x, cible.y)
         else:
@@ -142,15 +191,25 @@ def _gerer_ambulance(ambulance, env, strategy, logger):
     elif ambulance.robots_charges:
         strategy.set_cible(BASE_X, BASE_Y)
         if math.hypot(ambulance.x - BASE_X, ambulance.y - BASE_Y) <= RAYON_ACTION:
-            ambulance.moteur.v = ambulance.moteur.omega = 0.0
-            for r in ambulance.robots_charges:
-                # Délai de réparation aléatoire
+            ambulance.moteur.v = 0.0
+            ambulance.moteur.omega = 0.0
+
+            for i, r in enumerate(ambulance.robots_charges):
                 r.temps_reparation_restant = random.uniform(REPARATION_MIN_S, REPARATION_MAX_S)
                 r.en_reparation = True
                 r.en_panne = False
-                r.x, r.y = BASE_X, BASE_Y
+                r.en_sortie_base = False
+                r.dist_sortie_parcourue = 0.0
+                r.direction_sortie = None
+
+                # Position distincte dans la base pour éviter les superpositions
+                r.x, r.y = _position_reparation(i)
+
                 env.ajouter_robot(r)
-            logger.info(f"Base atteinte — {len(ambulance.robots_charges)} robot(s) en réparation.")
+
+            logger.info(
+                f"Base atteinte — {len(ambulance.robots_charges)} robot(s) en réparation."
+            )
             ambulance.robots_charges.clear()
             strategy.set_cible(None, None)
 
@@ -165,7 +224,8 @@ def _gerer_ambulance(ambulance, env, strategy, logger):
                 strategy.set_cible(BASE_X, BASE_Y)
             else:
                 strategy.set_cible(None, None)
-                ambulance.moteur.v = ambulance.moteur.omega = 0.0
+                ambulance.moteur.v = 0.0
+                ambulance.moteur.omega = 0.0
 
 
 def _calculer_commandes(ambulance, env, strat_ambu, strat_std):
@@ -183,14 +243,37 @@ def _calculer_commandes(ambulance, env, strat_ambu, strat_std):
             v = 0.0
     commandes[ambulance.id] = (v, omega)
 
+    # Un seul robot en sortie de base à la fois : priorité au plus petit ID
+    robots_sortie = sorted(
+        [
+            r for r in env.robots
+            if isinstance(r, RobotStandard) and r.en_sortie_base
+        ],
+        key=lambda r: r.id
+    )
+    robot_prioritaire_id = robots_sortie[0].id if robots_sortie else None
+
     # Robots standards
     for r in env.robots:
         if not isinstance(r, RobotStandard):
             continue
+
         if getattr(r, "en_reparation", False):
             commandes[r.id] = (0.0, 0.0)
+
         elif r.en_sortie_base:
-            commandes[r.id] = (AMBULANCE_V_APPROCHE, 0.0)
+            if r.id == robot_prioritaire_id:
+                direction_sortie = getattr(r, "direction_sortie", "gauche")
+
+                if direction_sortie == "gauche":
+                    r.theta = math.pi
+                else:  # bas
+                    r.theta = math.pi / 2
+
+                commandes[r.id] = (AMBULANCE_V_APPROCHE, 0.0)
+            else:
+                commandes[r.id] = (0.0, 0.0)
+
         elif not r.en_panne:
             commandes[r.id] = strat_std.compute_command(r.capteur.read(env))
         else:

@@ -1,20 +1,36 @@
-# TP2 : Simulation de Robot Mobile (Architecture MVC)
+# 🏥 La Clinique des Robots
 
-### Membres du groupe : Cyrile Opposite & Mohamad Tarrab
+**La Clinique des Robots** est une simulation de robotique autonome en 2D développée en Python avec Pygame. 
 
-Ce projet est une simulation cinématique d'un robot mobile à entraînement différentiel. Il a été réalisé dans le but de mettre en pratique l'architecture logicielle **MVC (Modèle-Vue-Contrôleur)** en Python, ainsi que la gestion d'un environnement avec détection de collisions.
+Dans cet environnement, des **robots standards** naviguent de manière autonome, évitent les obstacles grâce à des capteurs Lidar, mais peuvent tomber en panne aléatoirement. Un robot spécial, **l'ambulance**, est chargé d'aller secourir ces robots défectueux en optimisant ses tournées et sa charge utile avant de les ramener à la base pour réparation.
 
-## Fonctionnalités
+Ce projet met en pratique l'architecture logicielle **MVC (Modèle-Vue-Contrôleur)** ainsi que des algorithmes classiques d'optimisation et de navigation.
 
-* **Modèle Cinématique :** Calcul du déplacement du robot (vitesses linéaire $v$ et angulaire $\omega$).
-* **Architecture MVC stricte :** Séparation claire entre la logique physique (Modèle), l'affichage (Vue) et les entrées utilisateur (Contrôleur).
-* **Rendu Graphique :** Visualisation en temps réel avec Pygame.
-* **Environnement & Collisions :** Détection de collisions avec des obstacles circulaires (le robot est bloqué s'il touche un obstacle).
+---
 
-## Prérequis et Installation
+## ✨ Fonctionnalités Principales
 
-1. Assurez-vous d'avoir Python 3.x installé sur votre machine.
-2. Clonez ce dépôt et placez-vous à la racine du projet dans votre terminal.
-3. Installez les dépendances requises à l'aide du fichier `requirements.txt` :
-   ```bash
-   pip install -r requirements.txt
+* **Navigation Autonome & Évitement :** Les robots utilisent des capteurs (Lidar à moustaches simulés) pour détecter et esquiver les obstacles, les murs invisibles et les autres robots de manière fluide.
+* **Système de Pannes et de Réparation :** Les robots ont une probabilité de tomber en panne. L'ambulance les charge, les ramène à la base où ils sont réparés avec un système de file d'attente et de gestion du sas de sortie.
+* **Optimisation de la Collecte (Ambulance) :**
+  * **Algorithme du Sac-à-dos (Programmation Dynamique) :** L'ambulance calcule la meilleure combinaison de robots à récupérer pour maximiser le sauvetage sans dépasser sa capacité de charge maximale.
+  * **Heuristique du Plus Proche Voisin :** Une fois les robots sélectionnés, l'ambulance calcule un trajet optimisé (Greedy) pour les ramener le plus efficacement possible.
+* **Architecture MVC :** Séparation stricte entre la logique de simulation (Modèle), le rendu graphique (Vue) et les décisions comportementales (Contrôleur).
+
+---
+
+## 🛠️ Prérequis et Installation
+
+### 1. Prérequis
+Pour faire tourner cette simulation, vous devez avoir installé :
+* **Python 3.8** ou supérieur.
+
+### 2. Installation des dépendances
+Le projet repose sur la bibliothèque `pygame` pour le rendu graphique. 
+
+Ouvrez votre terminal et installez la dépendance via la commande suivante :
+```bash
+pip install requirements.txt
+
+
+
