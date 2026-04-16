@@ -1,13 +1,20 @@
-"""strategies.py — Stratégies de navigation fluides (Lidar 180°, N rayons)."""
+"""strategies.py — Stratégies de navigation (pattern Strategy)."""
 import math
 
+
+# ── Interface ─────────────────────────────────────────────────────────
+
 class Strategy:
+    """Interface commune pour toutes les stratégies de navigation."""
+
     def compute_command(self, observation, *args):
         raise NotImplementedError
 
 
+# ── Évitement pur (robots standards) ──────────────────────────────────
+
 class AvoidStrategy(Strategy):
-    """Évitement fluide : Plus l'obstacle est proche, plus l'angle de braquage augmente."""
+    """Évitement fluide basé sur la répartition du danger gauche/droite."""
 
     def __init__(self, distance_securite=60.0):
         self.distance_securite = distance_securite
@@ -17,40 +24,52 @@ class AvoidStrategy(Strategy):
             return 1.0, 0.0
 
         dist_min = min(observation)
-        
-        # Voie libre totale ou limite du capteur
+
+        # Voie libre → tout droit
         if dist_min >= self.distance_securite:
             return 1.0, 0.0
 
-        # --- Calcul Fluide ---
+        # Calcul du danger de chaque côté
         mid = len(observation) // 2
-        
-        # On calcule le niveau de "danger" (proximité) à gauche et à droite
-        danger_gauche = sum([self.distance_securite - d for d in observation[:mid] if d < self.distance_securite])
-        danger_droite = sum([self.distance_securite - d for d in observation[mid+1:] if d < self.distance_securite])
-        danger_centre = self.distance_securite - observation[mid] if observation[mid] < self.distance_securite else 0
+        ds = self.distance_securite
+        danger_gauche = sum(ds - d for d in observation[:mid] if d < ds)
+        danger_droite = sum(ds - d for d in observation[mid+1:] if d < ds)
+        danger_centre = (ds - observation[mid]
+                         if observation[mid] < ds else 0)
 
-        # Répartition du danger central du côté le plus encombré pour faciliter le choix
+        # Répartition du danger central vers le côté le plus encombré
         if danger_droite >= danger_gauche:
             danger_droite += danger_centre
         else:
             danger_gauche += danger_centre
 
-        # Ralentissement fluide : on maintient la vitesse à 80% minimum pour garder de l'élan
-        v = max(0.8, dist_min / self.distance_securite) 
-        
-        # Rotation fluide : on augmente la réactivité (0.15) pour compenser la vitesse élevée
-        diff_danger = danger_gauche - danger_droite
-        omega = diff_danger * 0.15
-        
-        # Bornage élargi pour autoriser un braquage plus sec
+        # Vitesse réduite proportionnellement à la proximité (min 80 %)
+        v = max(0.8, dist_min / ds)
+
+        # Rotation proportionnelle au déséquilibre de danger
+        omega = (danger_gauche - danger_droite) * 0.15
         omega = max(-2.5, min(2.5, omega))
 
         return v, omega
 
+    def compute_escape(self, observation):
+        """Manœuvre d'échappatoire quand le robot est bloqué."""
+        if observation:
+            max_idx = observation.index(max(observation))
+            mid = len(observation) // 2
+            if max_idx < mid:
+                return 0.5, 2.5
+            elif max_idx > mid:
+                return 0.5, -2.5
+            else:
+                return -0.3, 2.5
+        return 0.5, 2.5
+
+
+# ── Navigation vers cible + évitement (ambulance) ────────────────────
 
 class GoalAndAvoidStrategy(Strategy):
-    """Navigation fluide vers cible + évitement."""
+    """Combine navigation vers une cible et évitement d'obstacles."""
 
     def __init__(self, distance_securite=80.0):
         self.distance_securite = distance_securite
@@ -60,29 +79,37 @@ class GoalAndAvoidStrategy(Strategy):
         self.cible_x, self.cible_y = x, y
 
     def compute_command(self, observation, robot_x, robot_y, robot_theta):
-        dist_min = min(observation) if observation else self.distance_securite
-        
-        # 1. ESQUIVE (Prioritaire)
-        if dist_min < self.distance_securite:
+        dist_min = (min(observation) if observation
+                    else self.distance_securite)
+        ds = self.distance_securite
+
+        # 1. Esquive prioritaire si obstacle proche
+        if dist_min < ds:
             mid = len(observation) // 2
-            danger_gauche = sum([self.distance_securite - d for d in observation[:mid] if d < self.distance_securite])
-            danger_droite = sum([self.distance_securite - d for d in observation[mid+1:] if d < self.distance_securite])
-            danger_centre = self.distance_securite - observation[mid] if observation[mid] < self.distance_securite else 0
+            danger_gauche = sum(ds - d for d in observation[:mid]
+                                if d < ds)
+            danger_droite = sum(ds - d for d in observation[mid+1:]
+                                if d < ds)
+            danger_centre = (ds - observation[mid]
+                             if observation[mid] < ds else 0)
 
             if danger_droite >= danger_gauche:
                 danger_droite += danger_centre
             else:
                 danger_gauche += danger_centre
 
-            # Vitesse maintenue haute et rotation très nerveuse
-            v = max(0.8, dist_min / self.distance_securite) 
+            v = max(0.8, dist_min / ds)
             omega = (danger_gauche - danger_droite) * 0.15
             omega = max(-2.5, min(2.5, omega))
             return v, omega
 
-        # 2. NAVIGATION VERS CIBLE (Si pas d'obstacle)
+        # 2. Navigation vers la cible
         if self.cible_x is not None:
-            erreur_angle = (math.atan2(self.cible_y - robot_y, self.cible_x - robot_x) - robot_theta + math.pi) % (2 * math.pi) - math.pi
+            erreur_angle = (
+                math.atan2(self.cible_y - robot_y,
+                           self.cible_x - robot_x)
+                - robot_theta + math.pi
+            ) % (2 * math.pi) - math.pi
             v = 1.0
             omega = max(-1.0, min(1.0, erreur_angle * 1.5))
             return v, omega
@@ -90,13 +117,16 @@ class GoalAndAvoidStrategy(Strategy):
         return 0.0, 0.0
 
 
+# ── Contexte Strategy (pattern) ───────────────────────────────────────
+
 class Navigator:
-    """Contexte Strategy."""
-    def __init__(self, strategy): 
+    """Encapsule une stratégie interchangeable."""
+
+    def __init__(self, strategy):
         self.strategy = strategy
-        
-    def set_strategy(self, s): 
+
+    def set_strategy(self, s):
         self.strategy = s
-        
-    def step(self, obs, *args): 
+
+    def step(self, obs, *args):
         return self.strategy.compute_command(obs, *args)
